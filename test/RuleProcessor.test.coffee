@@ -86,4 +86,17 @@ vows.describe('no_trailing_commas').addBatch(
             """, configError)
             assert.isEmpty(result)
 
+        'should not warn when comma between objects in array': ->
+          result = coffeelint.lint("""
+            foo = [
+              name: 'bar'
+              value: 1
+            ,
+             name: 'baz'
+             value: 2
+
+            ]
+            """, configError)
+          assert.isEmpty(result)
+
 ).export(module)
