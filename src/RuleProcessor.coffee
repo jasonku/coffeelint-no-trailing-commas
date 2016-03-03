@@ -58,5 +58,5 @@ module.exports = class NoTrailingCommas
         # Don't throw errors when the contents of multiline strings,
         # regexes and the like end in ","
         if hasComma and lineApi.lineHasToken() and not isCallStart and
-                not (last[0] in ['STRING', 'IDENTIFIER', 'STRING_END', 'HERECOMMENT'])
+                not (last[0] in ['STRING', 'IDENTIFIER', 'STRING_END', 'HERECOMMENT', ','])
             return true
