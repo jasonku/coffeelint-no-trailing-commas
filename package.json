@@ -2,7 +2,7 @@
   "name": "coffeelint-no-trailing-commas",
   "version": "1.0.3",
   "description": "Validate no trailing commas",
-  "main": "index.js",
+  "main": "index.coffee",
   "scripts": {
     "test": "coffee vowsrunner.coffee --spec test/RuleProcessor.test.coffee"
   },
