@@ -9,7 +9,7 @@ This [CoffeeLint](http://www.coffeelint.org/) rule disallows trailing commas.
 ## Installation
 
 ```sh
-npm install coffeelint-no-implicit-returns
+npm install coffeelint-no-trailing-commas
 ```
 
 ## Usage
